@@ -1,0 +1,62 @@
+body { 
+    background-color: rgb(0, 0, 0); /* Cor de fundo da página */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gameCanvas {
+    background-color: #87CEFA; /* Céu azul claro */
+    width: 1250px; /* Largura do canvas */
+    height: 600px; /* Altura do canvas */
+    position: relative;
+    overflow: hidden; /* Para esconder qualquer coisa que saia do canvas */
+    background-image: url('img/imagem do jogo aviao.jpg'); /* Certifique-se de que o caminho da imagem está correto */
+    background-size: cover; /* Faz a imagem cobrir todo o canvas */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+}
+
+.plane {
+    width: 110px; /* Largura do avião */
+    height: 110px; /* Altura do avião */
+    background-image: url(img/airplane-9448466-unscreen.gif);
+    background-size: cover;
+    position: absolute;
+    bottom: 50px; /* Aumenta a altura do avião em relação ao fundo */
+    left: 375px; /* Centraliza horizontalmente */
+}
+
+.bullet {
+    width: 10px; /* Largura da bala */
+    height: 20px; /* Altura da bala */
+    background-color: yellow; /* Cor da bala (amarelo) */
+    position: absolute;
+    bottom: 100px; /* Ajusta a posição da bala mais para cima (ajuste conforme necessário) */
+    left: calc(375px + 20px); /* Posiciona a bala na frente do avião */
+}
+
+.obstacle {
+    width: 40px; /* Largura do obstáculo */
+    height: 40px; /* Altura do obstáculo */
+    position: absolute;
+    top: 0; /* Começa no topo */
+}
+
+.obstacle-red {
+    background-image: url(img/airplane-9448466-unscreen.gif); /* Imagem do obstáculo vermelho */
+    /* background-image: url(img/airplane-9448466-unscreen.gif); */
+    /* background-size: cover; Faz a imagem cobrir todo o obstáculo */
+}
+
+.obstacle-green {
+    background-image: url(img/helicopter_5199608-removebg-preview.png); /* Substitua pelo caminho da imagem do obstáculo verde */
+    background-size: cover; /* Faz a imagem cobrir todo o obstáculo */
+}
+
+.obstacle-blue {
+    background-image: url(img/lighthouse_1831498-removebg-preview.png); /* Substitua pelo caminho da imagem do obstáculo azul */
+    background-size: cover; /* Faz a imagem cobrir todo o obstáculo */
+}
